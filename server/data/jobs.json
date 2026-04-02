@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "company": "Infosys",
+    "role": "Full Stack Developer",
+    "status": "Applied",
+    "location": "Noida",
+    "link": "https://example.com"
+  },
+  {
+    "id": "2",
+    "company": "TCS",
+    "role": "React Developer",
+    "status": "Interview",
+    "location": "Bengaluru",
+    "link": "https://example.com"
+  }
+]

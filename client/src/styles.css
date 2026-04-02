@@ -1,0 +1,118 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.hero {
+  margin-bottom: 24px;
+}
+.badge {
+  display: inline-block;
+  background: #1d4ed8;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.hero h1 { font-size: 40px; margin: 12px 0 8px; }
+.subtitle { color: #94a3b8; max-width: 700px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 16px;
+}
+@media (max-width: 900px) {
+  .content-grid { grid-template-columns: 1fr; }
+}
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 20px;
+}
+.stat-card h3 {
+  font-size: 32px;
+  margin: 8px 0 0;
+}
+.form-grid {
+  display: grid;
+  gap: 12px;
+}
+input, select, button {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+button {
+  cursor: pointer;
+  background: #2563eb;
+  border: none;
+  font-weight: 700;
+}
+button.secondary { background: #334155; }
+button.danger { background: #dc2626; }
+.button-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+@media (max-width: 700px) {
+  .filters { grid-template-columns: 1fr; }
+}
+.job-list { display: grid; gap: 12px; }
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 16px;
+  background: #0b1220;
+}
+@media (max-width: 700px) {
+  .job-item { flex-direction: column; }
+}
+.job-item h3, .job-item p { margin: 0 0 6px; }
+.actions {
+  display: flex;
+  gap: 8px;
+  min-width: 180px;
+  align-items: start;
+}
+.status {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.status.applied { background: rgba(59,130,246,.2); color: #93c5fd; }
+.status.interview { background: rgba(234,179,8,.2); color: #fde68a; }
+.status.offer { background: rgba(34,197,94,.2); color: #86efac; }
+.status.rejected { background: rgba(239,68,68,.2); color: #fca5a5; }
+.error { color: #fca5a5; margin-top: 12px; }
+a { color: #93c5fd; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }

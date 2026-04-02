@@ -1,0 +1,1 @@
+Create React App will generate public files if you scaffold it, but this project includes the minimum source you can drop into a CRA app. To run directly from this folder, add public/index.html or scaffold with create-react-app and replace src.
